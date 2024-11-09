@@ -8,7 +8,7 @@ require_once __DIR__.'/../sample/bootstrap.php';
 $user = new \GetCourse\User();
 
 // Замените на ваш аккаунт
-$user::setAccountName('account_name');
+$user::setAccountName('getcourse_host');
 // Замените токен на сгенерированный вашим аккаунтом (http://{getcourse_host}/saas/account/api)
 $user::setAccessToken('secret_key');
 
