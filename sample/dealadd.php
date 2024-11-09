@@ -8,8 +8,8 @@ require_once __DIR__.'/../sample/bootstrap.php';
 $deal = new \GetCourse\Deal();
 
 // Замените на ваш аккаунт
-$deal::setAccountName('getcourse_host');
-// Замените токен на сгенерированный вашим аккаунтом (http://{your_account}.getcourse.ru/saas/account/api)
+$deal::setGetcourseHost('getcourse_host');
+// Замените токен на сгенерированный вашим аккаунтом (http://{your_account}/saas/account/api)
 $deal::setAccessToken('secret_key');
 
 try {

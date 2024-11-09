@@ -21,23 +21,23 @@ class Model
 	 */
 	private static $accessToken = 0;
 	/*
-	 * Название аккаунта GetCourse
+	 * Host GetCourse
 	 */
-	private static $accountName = '';
+	private static $getcourseHost = '';
 
 	public static function setAccessToken($accessToken)	{
 		self::$accessToken = $accessToken;
 	}
 
-	public static function setAccountName($accountName)	{
-		self::$accountName = $accountName;
+	public static function setGetcourseHost($getcourseHost)	{
+		self::$getcourseHost = $getcourseHost;
 	}
 
 	public static function getUrl() {
-		if(!self::$accountName) {
-			throw new \Exception("Account name not supplied");
+		if(!self::$getcourseHost) {
+			throw new \Exception("Host not supplied");
 		}
-		return 'https://' . self::$accountName . '.getcourse.ru/pl/api/';
+		return 'https://' . self::$getcourseHost . '/pl/api/';
 	}
 
 	/**
