@@ -17,11 +17,11 @@
   "repositories": [
         {
             "type": "git",
-            "url": "https://github.com/getcourse-ru/GetCourse-PHP-SDK"
+            "url": "git@github.com:yarooze/alchemilla-bundle.git"
         }
     ],
   "require": {
-     "getcourse-ru/GetCourse-PHP-SDK": "dev-master"
+     "yarooze/GetCourse-PHP-SDK": "dev-master"
   }
 ```
 
@@ -43,10 +43,10 @@
 Параметры в формате base64 кодированной JSON строки передаются как параметр params POST запроса
 
 ## Формат вызова импорта пользователя
-Импорт пользователя находится по адресу ```https://{account_name}.getcourse.ru/pl/api/users```
+Импорт пользователя находится по адресу ```https://{getcourse_host}/pl/api/users```
 
 Для добавления пользователя необходимо передать действие add, секретный ключ и параметры добавляемого пользователя:
-```curl -i -H "Accept: application/json; q=1.0, */*; q=0.1" "https://{account_name}.getcourse.dev/pl/api/users" --data "action=add&key={secret_key}&params={params}"```
+```curl -i -H "Accept: application/json; q=1.0, */*; q=0.1" "https://{getcourse_host}/pl/api/users" --data "action=add&key={secret_key}&params={params}"```
 
 Параметры пользователя:
 
@@ -82,10 +82,10 @@
 			
 
 ## Формат вызова импорта сделки
-Импорт сделки находится по адресу https://{account_name}.getcourse.ru/pl/api/deals
+Импорт сделки находится по адресу https://{getcourse_host}/pl/api/deals
 
 Для добавления сделки необходимо передать действие add, секретный ключ и параметры добавляемого пользователя и сделки:
-```curl -i -H "Accept: application/json; q=1.0, */*; q=0.1" "https://{account_name}.getcourse.dev/pl/api/deals" --data "action=add&key={secret_key}&params={params}"```
+```curl -i -H "Accept: application/json; q=1.0, */*; q=0.1" "https://{getcourse_host}/pl/api/deals" --data "action=add&key={secret_key}&params={params}"```
 
 Параметры сделки должны включать параметры пользователя и дополнительно параметры сделки с ключом deal:
 
@@ -119,10 +119,10 @@
 			});
 			
 ## Формат вызова отправки сообщения
-Отправка сообщения находится по адресу https://{account_name}.getcourse.ru/pl/api/messages
+Отправка сообщения находится по адресу https://{getcourse_host}/pl/api/messages
 
 Для добавления сделки необходимо передать действие send, секретный ключ и параметры отправляемого сообщения:
-```curl -i -H "Accept: application/json; q=1.0, */*; q=0.1" "https://{account_name}.getcourse.dev/pl/api/messages" --data "action=send&key={secret_key}&params={params}"```
+```curl -i -H "Accept: application/json; q=1.0, */*; q=0.1" "https://{getcourse_host}/pl/api/messages" --data "action=send&key={secret_key}&params={params}"```
 
 Параметры отправляемого сообщения должны включать:
 

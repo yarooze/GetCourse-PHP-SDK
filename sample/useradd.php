@@ -9,7 +9,7 @@ $user = new \GetCourse\User();
 
 // Замените на ваш аккаунт
 $user::setAccountName('account_name');
-// Замените токен на сгенерированный вашим аккаунтом (http://{your_account}.getcourse.ru/saas/account/api)
+// Замените токен на сгенерированный вашим аккаунтом (http://{getcourse_host}/saas/account/api)
 $user::setAccessToken('secret_key');
 
 try {
