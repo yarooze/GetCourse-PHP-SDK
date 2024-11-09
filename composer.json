@@ -1,14 +1,14 @@
 {
-  "name": "getcourse-ru/GetCourse-PHP-SDK",
+  "name": "yarooze/GetCourse-PHP-SDK",
   "description": "GetCourse's PHP SDK for APIs",
   "keywords": ["getcourse", "api", "sdk"],
   "type": "library",
   "license": "Apache2",
-  "homepage": "https://github.com/getcourse-ru/GetCourse-PHP-SDK",
+  "homepage": "https://github.com/yarooze/GetCourse-PHP-SDK",
   "authors": [
     {
       "name": "GetCourse API",
-      "homepage": "https://github.com/getcourse-ru/GetCourse-PHP-SDK"
+      "homepage": "https://github.com/yarooze/GetCourse-PHP-SDK"
     }
   ],
   "require": {

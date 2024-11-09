@@ -17,7 +17,7 @@
   "repositories": [
         {
             "type": "git",
-            "url": "git@github.com:yarooze/alchemilla-bundle.git"
+            "url": "git@github.com:yarooze/GetCourse-PHP-SDK.git"
         }
     ],
   "require": {
